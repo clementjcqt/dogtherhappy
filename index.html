@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,8 +8,11 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
   <!-- HEADER / NAV -->
   <header class="site-header">
@@ -26,12 +30,14 @@
       <button class="nav-toggle" aria-label="Ouvrir le menu">
         <span class="nav-toggle-bar"></span>
         <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
       </button>
 
       <nav class="main-nav">
         <ul>
           <li><a href="#hero">Accueil</a></li>
           <li><a href="#about">Notre histoire</a></li>
+          <li><a href="#benefits">Bienfaits</a></li>
           <li><a href="#who-we-serve">Qui peut en bénéficier ?</a></li>
           <li><a href="#services">Nos prestations</a></li>
           <li><a href="#pricing">Tarifs</a></li>
@@ -48,13 +54,10 @@
       <div class="container hero-inner">
         <div class="hero-text">
           <p class="hero-label">Notre thérapie ? Votre sourire</p>
-          <h1 class="hero-title">
-            Tout le monde mérite un peu de joie et de bienveillance quand il en a le plus besoin.
-          </h1>
           <p class="hero-subtitle">
-            Avec notre équipe, faire en sorte que cela se produise n’a jamais été aussi facile.
-            Réduisez le stress, la solitude, découvrez nos chiens et transformez
-            une mauvaise journée en une belle journée.
+            Les chiens ont un super pouvoir: celui de rendre la vie plus douce, plus joyeuse, plus humaine, même en
+            ville. Ensemble, apprenons à préserver cette magie…
+            Suivez-nous !
           </p>
 
           <div class="hero-actions">
@@ -77,14 +80,12 @@
           <div class="hero-phone">
             <div class="hero-phone-screen">
               <div class="dog-card">
-                <div class="dog-avatar">🐶</div>
-                <h3>Découvrez nos chiens</h3>
-                <p>Un moment de douceur, de présence et de complicité, en toute sécurité.</p>
+                <img src="images/Harlem&Viny_avec_enfant.jpg" alt="Chien visiteur Dog Therhappy avec un enfant"
+                  class="dog-card-photo" />
               </div>
-              <div class="dog-card secondary">
-                <div class="dog-avatar">🐕</div>
-                <h3>Une visite aujourd’hui ?</h3>
-                <p>Un coup de pouce à la positivité pour petits et grands.</p>
+              <div class="dog-card">
+                <img src="images/Harnais_dog_therhappy_viny.jpg" alt="Chien en harnais Dog Therhappy"
+                  class="dog-card-photo" />
               </div>
             </div>
           </div>
@@ -94,32 +95,136 @@
           </p>
         </div>
       </div>
+
+      <div class="hero-skyline-wrapper" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" class="hero-skyline">
+          <g fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" opacity="0.06">
+            <path d="
+              M0 240
+
+              L25 240 L25 180 L55 180 L55 240
+              L90 240 L90 150 L130 150 L130 240
+              L165 240 L165 200 L195 200 L195 240
+              L230 240 L230 130 L270 130 L270 240
+
+              L305 240 L305 210 L340 210 L340 240
+              L380 240 L380 140 L420 140 L420 240
+              L460 240 L460 170 L495 170 L495 240
+              L530 240 L530 120 L570 120 L570 240
+
+              L610 240 L610 185 L650 185 L650 240
+              L690 240 L690 160 L725 160 L725 240
+              L765 240 L765 110 L805 110 L805 240
+              L845 240 L845 190 L880 190 L880 240
+
+              L920 240 L920 135 L960 135 L960 240
+              L1000 240 L1000 180 L1035 180 L1035 240
+              L1070 240 L1070 155 L1110 155 L1110 240
+              L1150 240 L1150 95  L1185 95  L1185 240
+
+              L1225 240 L1225 170 L1265 170 L1265 240
+              L1300 240 L1300 145 L1340 145 L1340 240
+              L1380 240 L1380 115 L1440 115 L1440 240
+            " />
+          </g>
+
+          <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity="0.10">
+            <path d="
+              M0 260
+
+              L35 260 L35 190 L65 190 L65 260
+              L105 260 L105 165 L140 165 L140 260
+              L175 260 L175 225 L215 225 L215 260
+              L250 260 L250 135 L290 135 L290 260
+
+              L325 260 L325 210 L360 210 L360 260
+              L395 260 L395 155 L430 155 L430 260
+              L470 260 L470 115 L510 115 L510 260
+              L545 260 L545 235 L580 235 L580 260
+
+              L615 260 L615 175 L650 175 L650 260
+              L685 260 L685 140 L725 140 L725 260
+              L760 260 L760 225 L800 225 L800 260
+              L835 260 L835 120 L875 120 L875 260
+
+              L910 260 L910 200 L950 200 L950 260
+              L985 260 L985 150 L1025 150 L1025 260
+              L1060 260 L1060 180 L1095 180 L1095 260
+              L1130 260 L1130 95  L1170 95  L1170 260
+
+              L1205 260 L1205 210 L1245 210 L1245 260
+              L1280 260 L1280 160 L1320 160 L1320 260
+              L1355 260 L1355 115 L1395 115 L1395 260
+              L1440 260
+            " />
+          </g>
+
+          <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity="0.14">
+            <path d="
+              M0 285
+
+              L30 285 L30 210 L70 210 L70 285
+              L110 285 L110 155 L150 155 L150 285
+              L190 285 L190 245 L225 245 L225 285
+              L265 285 L265 130 L305 130 L305 285
+
+              L345 285 L345 190 L380 190 L380 285
+              L420 285 L420 105 L460 105 L460 285
+              L500 285 L500 240 L540 240 L540 285
+              L575 285 L575 150 L615 150 L615 285
+
+              L650 285 L650 225 L690 225 L690 285
+              L730 285 L730 115 L770 115 L770 285
+              L810 285 L810 255 L845 255 L845 285
+              L880 285 L880 135 L920 135 L920 285
+
+              L960 285 L960 200 L995 200 L995 285
+              L1030 285 L1030 95  L1070 95  L1070 285
+              L1105 285 L1105 240 L1140 240 L1140 285
+              L1180 285 L1180 170 L1215 170 L1215 285
+
+              L1250 285 L1250 230 L1285 230 L1285 285
+              L1320 285 L1320 140 L1360 140 L1360 285
+              L1395 285 L1395 180 L1440 180 L1440 285
+            " />
+
+            <path d="M0 295
+                 C250 315, 600 260, 950 310
+                 S1440 275, 1440 295" stroke-linecap="round" />
+          </g>
+        </svg>
+      </div>
     </section>
 
     <!-- ABOUT -->
     <section id="about" class="section section-alt">
-      <div class="container two-columns">
-        <div>
-          <p class="section-label">À propos</p>
-          <h2>Notre histoire</h2>
-          <p>
-            L’aventure Dog Therhappy commence en 2018, lorsque nous prenons conscience
-            d’un besoin fort de se reconnecter à l’essentiel : la nature, la bienveillance
-            et le lien aux animaux.
-          </p>
-          <p>
-            Notre équipe est composée de <strong>4 chiens de médiation</strong>, d’un
-            <strong>éducateur canin</strong> et de <strong>bénévoles</strong> issus du milieu
-            associatif et canin. Ensemble, nous travaillons chaque jour pour apporter
-            du réconfort, de la joie et de la douceur à ceux qui en ont le plus besoin.
-          </p>
-          <p>
-            Que vous ayez 4 ans ou 104 ans, Dog Therhappy offre une parenthèse chaleureuse
-            et une présence rassurante. Nous mettons un coup de pouce à la positivité,
-            partout où nous intervenons.
-          </p>
-        </div>
+      <div class="container">
+        <p class="section-label">À propos</p>
+        <img src="images/Bande_dessinée_notre histoire.jpg" alt="Notre histoire en bande dessinée"
+          class="about-image" />
+        <div class="two-columns">
+          <div>
+            <h2>Notre histoire</h2>
+            <p>
+              L’aventure de DT commence en 2018, lorsque nous prenons conscience d’un besoin fort et collectif de se
+              reconnecter à l’essentiel: la bienveillance, le lien social, et la joie. Les chiens dans la ville peuvent
+              créer cette dynamique, mais soulève aussi des défis uniques en termes de cohabitation.</p>
+            <p>
+              Notre équipe relève le défi, en opportunités de pouvoir travailler tous ensemble à notre bien-être commun.
+              Que vous ayez 4 ans ou 104 ans, rejoignez-nous pour construire un environnement plus harmonieux et
+              respectueux du bien-être de TOUS.
 
+              Un simple regard garantie une dose d’ocytocine, l’hormone du bonheur ☺
+              <br>
+            </p>
+            <p>Rencontrons-nous…</p>
+
+          </div>
+
+          <div>
+            <img src="images/Harlem&Viny&Reiko.jpg" alt="Chiens visiteurs Dog Therhappy" class="about-image-2" />
+          </div>
+        </div>
         <div class="about-cards">
           <article class="info-card">
             <h3>Notre thérapie, c’est votre sourire</h3>
@@ -135,6 +240,76 @@
               garantir des interventions sécurisées, respectueuses des personnes
               comme des animaux.
             </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section id="benefits" class="section">
+      <div class="container">
+        <p class="section-label">Bienfaits</p>
+        <h2>Bienfaits de la Médiation Canine</h2>
+        <p class="section-intro">
+          Comment la présence du chien agit sur le corps, l’esprit et les comportements, pour tous les publics que nous
+          accompagnons.
+        </p>
+
+        <div class="benefits-grid">
+          <article class="benefit-card">
+            <h3>Physiologique & émotionnel</h3>
+            <ul>
+              <li><strong>Réduction du Stress et de l'Anxiété :</strong> Le contact ou la simple présence du chien
+                entraîne une baisse du taux de cortisol (l'hormone du stress).</li>
+              <li><strong>Apaisement et Sérénité :</strong> On observe une diminution de la fréquence cardiaque et de la
+                tension artérielle, induisant un état de détente.</li>
+              <li><strong>Libération d'Hormones Positives :</strong> La caresse ou l'interaction avec le chien stimule
+                la production d'ocytocine (hormone de l'attachement), de dopamine (plaisir et motivation) et
+                d'endorphines.</li>
+            </ul>
+          </article>
+
+          <article class="benefit-card">
+            <h3>Psychologique & cognitif</h3>
+            <ul>
+              <li><strong>Rupture de l'Isolement et Lien Social :</strong> L'animal est un facilitateur social qui
+                encourage la communication, non seulement avec lui, mais aussi avec l'intervenant et les autres
+                participants.</li>
+              <li><strong>Estime de Soi et Responsabilisation :</strong> Prendre soin de l'animal, le brosser ou lui
+                donner des ordres simples permet de se sentir utile et capable, renforçant le sentiment de compétence et
+                d'estime de soi.</li>
+              <li><strong>Stimulation de la Mémoire :</strong> La présence de l'animal peut faire ressurgir des
+                souvenirs positifs (chez les personnes âgées, par exemple), stimulant la mémoire.</li>
+              <li><strong>Amélioration de la Concentration :</strong> L'animal capte l'attention et encourage la
+                personne à rester focalisée sur l'activité en cours.</li>
+            </ul>
+          </article>
+
+          <article class="benefit-card">
+            <h3>Moteur & sensoriel</h3>
+            <ul>
+              <li><strong>Motricité Fine :</strong> Des gestes comme brosser le chien, lui donner une friandise ou
+                attacher sa laisse travaillent la dextérité et la précision.</li>
+              <li><strong>Motricité Globale :</strong> Promener le chien, se lever pour interagir avec lui ou faire des
+                parcours encouragent l'activité physique et la mobilisation corporelle.</li>
+              <li><strong>Stimulation Sensorielle :</strong> Le contact tactile (caresser la fourrure), les sons
+                (aboiements ou halètements) et les odeurs du chien stimulent les sens, ce qui est particulièrement
+                bénéfique pour les personnes ayant des troubles sensoriels ou cognitifs.</li>
+            </ul>
+          </article>
+
+          <article class="benefit-card">
+            <h3>Éducatif & comportemental</h3>
+            <ul>
+              <li><strong>Apprentissage de l'Empathie :</strong> Le chien ne triche pas. Il exprime clairement ses
+                émotions, ce qui apprend aux participants à observer, décrypter et répondre avec empathie aux besoins
+                d'autrui.</li>
+              <li><strong>Gestion des Émotions :</strong> En interagissant avec un chien, on apprend à moduler sa voix
+                et ses gestes. L'animal sert de miroir, obligeant à la régulation des troubles du comportement et à
+                l'apaisement de l'agressivité.</li>
+              <li><strong>Intégration des Règles :</strong> L'activité enseigne le respect de l'autre (l'animal) et des
+                règles de sécurité, essentielles à la cohabitation en société.</li>
+            </ul>
           </article>
         </div>
       </div>
@@ -208,7 +383,7 @@
               </div>
             </div>
             <div class="service-card-body">
-              <h3>Particuliers & familles</h3>
+              <h3>Conseils et accompagnement</h3>
             </div>
           </article>
         </div>
@@ -228,6 +403,8 @@
         <div class="services-grid">
           <!-- 1. Visites de chiens thérapeutes -->
           <article class="detail-card">
+            <img src="images/chien_zen_colonne_visites de chiens therapeutes.jpg"
+              alt="Chien zen colonne visites de chiens therapeutes" class="detail-card-img" />
             <h3>Visites de chiens thérapeutes</h3>
             <p class="detail-tag">EHPAD, écoles, centres éducatifs, autres structures</p>
             <ul>
@@ -248,7 +425,9 @@
 
           <!-- 2. Sensibilisation des jeunes -->
           <article class="detail-card">
-            <h3>Sensibilisation des jeunes à l’approche canine</h3>
+            <img src="images/chien-colonne_sensibilisation_à_lapproche_canine.jpg"
+              alt=" Chien colonne sensibilisation à lapproche canine" class="detail-card-img" />
+            <h3>Sensibilisation à l’approche canine</h3>
             <p class="detail-tag">Ateliers pédagogiques</p>
             <ul>
               <li>
@@ -268,20 +447,17 @@
 
           <!-- 3. Conseils en éducation canine -->
           <article class="detail-card">
-            <h3>Conseils en éducation canine</h3>
+            <img src="images/dessin_colonne_conseils&accompagnement.jpg" alt=" Dessin colonne conseils&accompagnement"
+              class="detail-card-img" />
+            <h3>Conseils & accompagnement</h3>
             <p class="detail-tag">Séances personnalisées</p>
             <ul>
               <li>
-                <strong>Améliorer le comportement :</strong> résolution de
-                problématiques du quotidien, apprentissage des bonnes pratiques.
+                <strong>Accompagner</strong> les municipalités dans la mise en place d'une politique favorable à la
+                cohabitation harmonieuse entre l'Homme et le chien en ville.
               </li>
               <li>
-                <strong>Cohabitation harmonieuse :</strong> construire une
-                relation équilibrée entre le chien et sa famille.
-              </li>
-              <li>
-                <strong>Préparer votre chien aux visites :</strong> travail
-                spécifique pour qu’il soit à l’aise dans différents contextes.
+                <strong>Partenariat</strong> avec les acteurs sociaux et associatifs.
               </li>
             </ul>
           </article>
@@ -302,10 +478,10 @@
 
         <div class="pricing-grid">
           <article class="pricing-card pricing-blue">
-            <h3>Visites de chiens thérapeutes</h3>
+            <h3>Visites de chiens de médiation (1 heure)</h3>
             <ul class="pricing-list">
-              <li><strong>Individuel :</strong> … €/heure</li>
-              <li><strong>Groupe :</strong> … €/heure</li>
+              <li><strong>Individuel :</strong> 20 €/heure</li>
+              <li><strong>Groupe (de 3 à 6 personnes) :</strong> 100 €/heure</li>
               <li><strong>Forfaits sur mesure :</strong> sur devis</li>
             </ul>
           </article>
@@ -313,15 +489,17 @@
           <article class="pricing-card pricing-green">
             <h3>Sensibilisation & ateliers</h3>
             <ul class="pricing-list">
-              <li><strong>Tarifs sensibilisation :</strong> sur devis</li>
+              <li><strong>Tarifs de l'atelier :</strong> sur devis</li>
             </ul>
           </article>
 
           <article class="pricing-card pricing-yellow">
-            <h3>Éducation canine</h3>
+            <h3>Conseils & accompagnement</h3>
+            <p>Les chiens dans la ville</p>
+            <p><strong>Force associative</strong></p>
             <ul class="pricing-list">
-              <li><strong>Évaluation :</strong> … €</li>
-              <li><strong>Cours individuel :</strong> … €</li>
+              <li><strong>Particulier :</strong>25 €/heure</li>
+              <li><strong>Municipalités, acteurs sociaux et associatifs :</strong> sur devis</li>
               <li><strong>Forfait :</strong> … €</li>
             </ul>
           </article>
@@ -373,7 +551,7 @@
     <section id="testimonials" class="section">
       <div class="container">
         <p class="section-label">Ils nous font confiance</p>
-        <h2>Vos mots, leurs sourires</h2>
+        <h2>Vos mots, vos sourires</h2>
 
         <div class="testimonials-grid">
           <article class="testimonial-card">
@@ -412,7 +590,7 @@
           </p>
 
           <div class="contact-info">
-            <p><strong>Email :</strong> <a href="mailto:Mireille.Soumah@orange.fr">Mireille.Soumah@orange.fr</a></p>
+            <p><strong>Email :</strong> <a href="dogtherhappy@gmail.com">dogtherhappy@gmail.com</a></p>
             <p><strong>Téléphone :</strong> <a href="tel:+33681214473">06 81 21 44 73</a></p>
           </div>
 
@@ -420,7 +598,9 @@
             <p>
               Dog Therhappy est une démarche de <strong>bien-être</strong> et de
               <strong>prévention</strong> par la médiation animale.
-              Nous ne sommes pas psychologues ni professionnels de santé.
+              Association loi 1901, sans but lucratif : toute aide est la bienvenue.
+              <br>
+              <strong>Merci !</strong>
             </p>
           </div>
         </div>
@@ -460,7 +640,10 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-left">
-        <p class="footer-brand">Dog Therhappy</p>
+        <div class="footer-branding">
+          <img src="images/logo_dog.png" alt="Dog Therhappy" class="footer-logo" />
+          <p class="footer-brand">Dog Therhappy</p>
+        </div>
         <p class="footer-copy">
           © <span id="year"></span> Dog Therhappy — Tous droits réservés.
         </p>
@@ -483,4 +666,5 @@
 
   <script src="main.js"></script>
 </body>
+
 </html>

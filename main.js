@@ -56,6 +56,7 @@ if (contactForm && formFeedback) {
     const formData = new FormData(contactForm);
     const name = (formData.get('name') || '').toString().trim();
     const email = (formData.get('email') || '').toString().trim();
+    const organization = (formData.get('organization') || '').toString().trim();
     const message = (formData.get('message') || '').toString().trim();
 
     const emailValid = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email);
@@ -66,10 +67,22 @@ if (contactForm && formFeedback) {
       return;
     }
 
+    const subject = encodeURIComponent(`Contact Dog Therhappy - ${name}`);
+    const bodyLines = [
+      `Nom: ${name}`,
+      `Email: ${email}`,
+      organization ? `Organisation: ${organization}` : '',
+      '',
+      'Message:',
+      message
+    ].filter(Boolean);
+
+    const body = encodeURIComponent(bodyLines.join('\\n'));
+    window.location.href = `mailto:dogtherhappy@gmail.com?subject=${subject}&body=${body}`;
+
     formFeedback.textContent =
-      "Merci pour votre message ! Nous vous répondrons au plus vite.";
+      "Merci ! Votre application mail va s'ouvrir avec votre message pré-rempli.";
     formFeedback.style.color = '#0ca678';
-    contactForm.reset();
   });
 }
 
