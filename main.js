@@ -46,46 +46,6 @@ if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
 }
 
-// Formulaire de contact (fake submit côté front)
-const contactForm = document.getElementById('contact-form');
-const formFeedback = document.getElementById('form-feedback');
-
-if (contactForm && formFeedback) {
-  contactForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const formData = new FormData(contactForm);
-    const name = (formData.get('name') || '').toString().trim();
-    const email = (formData.get('email') || '').toString().trim();
-    const organization = (formData.get('organization') || '').toString().trim();
-    const message = (formData.get('message') || '').toString().trim();
-
-    const emailValid = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email);
-
-    if (!name || !emailValid || !message) {
-      formFeedback.textContent = "Merci de renseigner un nom, un email valide et un message.";
-      formFeedback.style.color = '#ef4444';
-      return;
-    }
-
-    const subject = encodeURIComponent(`Contact Dog Therhappy - ${name}`);
-    const bodyLines = [
-      `Nom: ${name}`,
-      `Email: ${email}`,
-      organization ? `Organisation: ${organization}` : '',
-      '',
-      'Message:',
-      message
-    ].filter(Boolean);
-
-    const body = encodeURIComponent(bodyLines.join('\\n'));
-    window.location.href = `mailto:dogtherhappy@gmail.com?subject=${subject}&body=${body}`;
-
-    formFeedback.textContent =
-      "Merci ! Votre application mail va s'ouvrir avec votre message pré-rempli.";
-    formFeedback.style.color = '#0ca678';
-  });
-}
-
 // Petits toasts "Bientôt en ligne" pour les boutons [data-soon]
 document.querySelectorAll('[data-soon]').forEach(button => {
   button.addEventListener('click', () => {
