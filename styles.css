@@ -904,18 +904,47 @@ h1, h2, h3 {
   align-items: start;
 }
 
-.contact-info p {
-  margin: 0.25rem 0;
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   color: var(--text-muted);
 }
 
-.contact-info a {
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(28, 126, 214, 0.1);
   color: var(--brand-primary);
+  flex-shrink: 0;
+}
+
+.contact-icon svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.contact-link {
+  color: var(--text-main);
   text-decoration: none;
   font-weight: 600;
 }
 
-.contact-info a:hover {
+.contact-link:hover {
+  color: var(--brand-primary);
   text-decoration: underline;
 }
 
@@ -1071,6 +1100,12 @@ h1, h2, h3 {
   }
 
   .hero-text {
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
   }
 
